@@ -1,0 +1,60 @@
+/***********************************************************************
+*FileName	:  ServerMsg
+*Author		:  fz
+*Date		:  2016.4.1
+*Description:  Server内部App之间通信消息
+************************************************************************/
+
+import "MessageBase.proto";
+import "GlobalDef.proto";
+
+/*测试消息*/
+message MsgTestS
+{
+	required MsgBase base			= 1;
+	required EPlatformType t1		= 2;
+}
+
+message MsgRegisterApp
+{
+	required MsgBase base			= 1;
+	required int32 app_type			= 2;//见ServerAppType
+	optional int32 app_id			= 3;
+}
+message MsgRespondApp
+{
+	required MsgBase base			= 1;
+}
+message MsgUnRegisterApp
+{
+	required MsgBase base			= 1;
+	required int32 app_type			= 2;//见ServerAppType
+	optional int32 app_id			= 3;
+}
+
+message SMsgVerifyAccountReq
+{
+	required MsgBase base			= 1;
+	required bytes account			= 2;
+	optional bytes password			= 3;
+	optional int32 dev_type			= 4;//设备类型
+	optional bytes dev_key			= 5;//设备key
+	optional EPlatformType pf_type	= 6;//平台类型
+	required int32 verify_key		= 7;//由BaseCenterApp生成的验证key
+}
+
+enum VerifyAcconutResult
+{
+	EVAR_Success					= 1;
+	EVAR_Fail						= 2;
+}
+message SMsgVerifyAccountRes
+{
+	required MsgBase base			= 1;
+	required bytes account			= 2;
+	required int32 verify_key		= 3;
+	required bytes base_ip			= 4;//游戏服务器ip
+	required int32 base_port		= 5;//游戏服务器端口
+	required int64 base_key			= 6;//用于游戏服的登录验证,有时效
+	
+}

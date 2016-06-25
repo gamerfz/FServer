@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+DBConfig
+	mysql连接配置
+
+字段1:
+	说明
+字段2:
+	说明	
+		<Game Name="game2" User="root" Password="" Host="127.0.0.1" Port="3306"/>
+	<Game Name="game3" User="root" Password="" Host="127.0.0.1" Port="3306"/>
+	<Game Name="game4" User="root" Password="" Host="127.0.0.1" Port="3306"/>
+	<Game Name="game5" User="root" Password="" Host="127.0.0.1" Port="3306"/>
+-->
+<Root>
+	<Global Name="global" User="root" Password="" Host="127.0.0.1" Port="3306"/>
+	<Game Name="game" User="root" Password="" Host="127.0.0.1" Port="3306"/>
+	<Game Name="game1" User="root" Password="" Host="127.0.0.1" Port="3306"/>
+
+</Root>

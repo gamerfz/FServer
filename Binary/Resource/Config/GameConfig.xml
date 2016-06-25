@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+游戏配置
+	游戏全局或常用或基础配置
+
+格式统一为字符串
+-->
+<Root>
+	<Version>0.1.1</Version>
+	<Area>AS</Area>
+</Root>

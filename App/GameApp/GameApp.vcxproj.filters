@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{aae967af-6a61-4731-8bad-15b33853b671}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetInterface">
+      <UniqueIdentifier>{817fabd6-65af-44b2-b139-78031d2469c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{eb7084c1-ab71-4016-ab26-ba116dfc4b18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message">
+      <UniqueIdentifier>{27d60827-17f6-4897-9f78-df44d43ff0f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AppMgr">
+      <UniqueIdentifier>{0f50f5f3-4381-4668-857c-f32b338599f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\Common\ConfigManager.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Common\ConfigStruct.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Common\ServerDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GameNetLogic.h">
+      <Filter>NetInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="GCSession.h">
+      <Filter>NetInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="GameApp.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Common\ProtoMessage.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Message\ClientMsg.pb.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Message\GlobalDef.pb.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Message\MessageBase.pb.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Message\ServerMsg.pb.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseAppManager.h">
+      <Filter>NetInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseApp.h">
+      <Filter>NetInterface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Include\Common\ConfigManager.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GameNetLogic.cpp">
+      <Filter>NetInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="GCSession.cpp">
+      <Filter>NetInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="GameApp.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\Common\ProtoMessage.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\Message\GlobalDef.pb.cc">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\Message\MessageBase.pb.cc">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\Message\ServerMsg.pb.cc">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\Message\ClientMsg.pb.cc">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseAppManager.cpp">
+      <Filter>NetInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseApp.cpp">
+      <Filter>NetInterface</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

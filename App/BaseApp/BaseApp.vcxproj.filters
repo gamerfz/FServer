@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{24a0dcb6-a986-45bf-b862-778832424e60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{c93fd4d9-a23b-41cb-a7fd-27f9f99a4f34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetInterface">
+      <UniqueIdentifier>{bbf67e9b-96bb-4a98-b550-74ce7fac4110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message">
+      <UniqueIdentifier>{e9261e3a-b347-404e-b8c4-3a8f385c2b89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{f869e856-576a-4738-96be-3e250964c0c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseApp.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseNetLogic.cpp">
+      <Filter>NetInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\Common\ConfigManager.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="BCSession.cpp">
+      <Filter>NetInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSession.cpp">
+      <Filter>NetInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\Message\ClientMsg.pb.cc">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\Message\GlobalDef.pb.cc">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\Message\MessageBase.pb.cc">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\Message\ServerMsg.pb.cc">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\Common\ProtoMessage.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DBSession.cpp">
+      <Filter>NetInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerManager.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseApp.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseNetLogic.h">
+      <Filter>NetInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Common\ConfigManager.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Common\ConfigStruct.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BCSession.h">
+      <Filter>NetInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Common\ServerDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSession.h">
+      <Filter>NetInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Message\ClientMsg.pb.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Message\GlobalDef.pb.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Message\MessageBase.pb.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Message\ServerMsg.pb.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Common\ProtoMessage.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DBSession.h">
+      <Filter>NetInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerManager.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

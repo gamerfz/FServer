@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="xml">
+      <UniqueIdentifier>{c67e51bd-e4ad-4145-8483-8376bf77f488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="windump">
+      <UniqueIdentifier>{687cb4a3-cfcb-4443-a067-333d32014146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timer">
+      <UniqueIdentifier>{b47c9114-5913-42f9-825a-ba34ee23be7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="singleton">
+      <UniqueIdentifier>{cdab197e-57dd-41da-b6e2-9208e6f48ea0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objectpool">
+      <UniqueIdentifier>{35b5835f-b09d-4ec0-b45c-cdff63444019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="md5">
+      <UniqueIdentifier>{8d4d29af-30d6-4a43-a588-1a0b317f957b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base64">
+      <UniqueIdentifier>{ba8b12d2-d8ef-4b71-ad7a-3c62e598ec1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mysqlpp">
+      <UniqueIdentifier>{25ead4af-e155-497f-901f-d7a041c34d4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="redis">
+      <UniqueIdentifier>{87097471-b714-4b7e-858c-be3ed0b46d4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="guid">
+      <UniqueIdentifier>{9638b2ff-cf76-4372-a591-feb1af29d6dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua">
+      <UniqueIdentifier>{f7121f7e-a875-4871-a9fd-a644b82bad80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{da87e133-a1b9-45a7-b346-5b7e7c30a627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\network">
+      <UniqueIdentifier>{c1edf8ba-a3ce-4e31-9dc5-fc7ff8f181f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\instance">
+      <UniqueIdentifier>{ca50bbe7-1f81-4806-83f6-4f5ac7f36d64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\session">
+      <UniqueIdentifier>{15247b4a-1456-4995-b4be-5142e4006f67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\session\client">
+      <UniqueIdentifier>{9fd0b3bb-da4f-4e2e-973e-60cf4db5f9b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\session\server">
+      <UniqueIdentifier>{d654e90c-ce8b-4708-9388-eefd665621b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base64.cpp">
+      <Filter>base64</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>md5</Filter>
+    </ClCompile>
+    <ClCompile Include="NetInterface.cpp">
+      <Filter>net\instance</Filter>
+    </ClCompile>
+    <ClCompile Include="NetEventQueue.cpp">
+      <Filter>net\network</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWork.cpp">
+      <Filter>net\network</Filter>
+    </ClCompile>
+    <ClCompile Include="NetListener.cpp">
+      <Filter>net\network</Filter>
+    </ClCompile>
+    <ClCompile Include="NetIO.cpp">
+      <Filter>net\network</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerEvent.cpp">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Xml.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="WinDump.cpp">
+      <Filter>windump</Filter>
+    </ClCompile>
+    <ClCompile Include="DBInterface.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="RedisConnect.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="Guid.cpp">
+      <Filter>guid</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaScript.cpp">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerSession.cpp">
+      <Filter>net\session\client</Filter>
+    </ClCompile>
+    <ClCompile Include="AppSession.cpp">
+      <Filter>net\session\server</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerSession.cpp">
+      <Filter>net\session\server</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\Core\base64.h">
+      <Filter>base64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\md5.h">
+      <Filter>md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\NetInterface.h">
+      <Filter>net\instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\ObjectPool.h">
+      <Filter>objectpool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\rapidxml_utils.hpp">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\rapidxml.hpp">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\rapidxml_iterators.hpp">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\rapidxml_print.hpp">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\Xml.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\TimerEvent.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\Singleton.h">
+      <Filter>singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\NetWork.h">
+      <Filter>net\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\NetDefine.h">
+      <Filter>net\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\NetEventQueue.h">
+      <Filter>net\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\NetIO.h">
+      <Filter>net\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\NetListener.h">
+      <Filter>net\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\NetObject.h">
+      <Filter>net\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\WinDump.h">
+      <Filter>windump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\DBInterface.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\RedisConnect.h">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\PoolManager.h">
+      <Filter>objectpool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\Guid.h">
+      <Filter>guid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\GPDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\LuaScript.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\ServerSession.h">
+      <Filter>net\session\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\PlayerSession.h">
+      <Filter>net\session\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\AppSession.h">
+      <Filter>net\session\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Core\BaseSession.h">
+      <Filter>net\session</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

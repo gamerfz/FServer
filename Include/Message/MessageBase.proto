@@ -1,0 +1,50 @@
+/***********************************************************************
+*FileName	:  MessageBase
+*Author		:  fz
+*Date		:  2016.4.1
+*Description:  proto消息基类+消息类型定义
+************************************************************************/
+
+/*消息基类*/
+message MsgBase
+{
+	required MsgType type			= 1;//每条消息必须要有类型[default = Msg_Default]
+	optional int32 result			= 2;//返回结果
+}
+
+/*用于MsgBase的反序列化*/
+message MsgParse
+{
+	required MsgBase base			= 1;
+}
+
+/*消息类型定义*/
+enum MsgType
+{
+	/*0~999为预留的消息类型,不涉及逻辑*/
+	Msg_Default						= 0;//未初始化的消息类型
+	Msg_Ping						= 1;//心跳S-S S-C
+
+	Msg_RegisterApp					= 10;//注册app
+	Msg_RespondApp					= 11;//响应app
+	Msg_UnRegisterApp				= 12;//反注册app
+
+
+	/*logic*/
+	Msg_VerifyAccountReq			= 1000;//请求帐号验证(首次连接服务器)
+	Msg_VerifyAccountRes			= 1001;//响应帐号验证
+	Msg_LoginAccountReq				= 1002;//请求帐号登录(验证成功登录服务端分配的游戏服务器)
+	Msg_LoginAccountRes				= 1003;//响应帐号登录
+	Msg_LoginGameReq				= 1004;//请求登录游戏(选择角色进入游戏服务器)
+	Msg_LoginGameRes				= 1005;//响应登录游戏
+	Msg_UnLoginGameReq				= 1006;//请求退出游戏
+	Msg_UnLoginGameRes				= 1007;//响应退出游戏
+	Msg_PlayerDataReq				= 1010;//请求玩家初始数据(分类型分包处理)
+	Msg_PlayerDataRes				= 1011;//响应玩家初始数据
+
+
+
+	Msg_Test						= 30000;//测试消息
+	///////////////////////////////////////////////////////////////////////
+	
+}

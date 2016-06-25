@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+服务器配置
+	服务器的基础配置，所有服务器通用
+
+AppID:
+	服务器AppID号，不可重复，全局唯一App已在程序内定义，不修改，见ServerAppID
+IP:
+	IP地址，用于服务端App之间或外部Client的连接
+Port:
+	当前App监听的端口号
+-->
+<Root>
+	<!--唯一App-->
+	<DBMgr AppID="1" IP="192.168.11.101" Port="23001"/>
+	<BaseCenter AppID="2" IP="192.168.11.101" Port="23002"/>
+	<GameCenter AppID="3" IP="192.168.11.101" Port="23003"/>
+	<LoginApp AppID="4" IP="192.168.11.101" Port="23006"/>
+	<PaymentApp AppID="5" IP="192.168.11.101" Port="23005"/>
+	<InterfaceApp AppID="6" IP="192.168.11.101" Port="23004"/>
+	<!--可启动多个的App-->
+	<BaseApp AppID="100" IP="192.168.11.101" Port="23011"/>
+	<BaseApp AppID="101" IP="192.168.11.101" Port="23012"/>
+	<GameApp AppID="102" IP="192.168.11.101" Port="23013"/>
+	<GameApp AppID="103" IP="192.168.11.101" Port="23014"/>
+	<CubbyApp AppID="501" IP="192.168.11.101" Port="23501"/>
+</Root>
